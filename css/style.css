@@ -393,11 +393,6 @@
     font-size: var(--h3-font-size);
 }
 
-.skills__subtitle {
-    font-size: var(--small-font-size);
-    color: var(--text-color-light);
-}
-
 .skills__arrow {
     margin-left: auto;
     transition: .4s;
@@ -437,20 +432,20 @@
 
 /* ==== FRONTEND SKILLS ==== */
 
-.skills__html {
+.skills__c {
     width: 90%;
 }
 
-.skills__css {
+.skills__java {
     width: 80%;
 }
 
-.skills__javascript {
-    width: 75%;
+.skills__python {
+    width: 70%;
 }
 
-.skills__react {
-    width: 90%;
+.skills__javascript {
+    width: 50%;
 }
 
 /* ==== BACKEND SKILLS ==== */
