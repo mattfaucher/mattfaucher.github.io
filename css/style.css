@@ -606,7 +606,7 @@ img {
     padding: 0 1.5rem;
 }
 
-.projects__img {
+.project__img {
     width: 265px;
     border-radius: 0.5rem;
     justify-self: center;
