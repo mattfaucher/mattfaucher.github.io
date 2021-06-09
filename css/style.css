@@ -1,5 +1,5 @@
 /* ==== GOOGLE FONT ==== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 :root {
     --header-height: 3rem;
@@ -22,7 +22,7 @@
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
     /* ==== FONTS ==== */
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Oxygen', sans-serif;
     --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -105,7 +105,7 @@ html {
 
 body {
     margin: 0 0 var(--header-height) 0;
-    font-family: var(--body-height);
+    font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color);
