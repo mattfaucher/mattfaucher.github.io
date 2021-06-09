@@ -629,22 +629,6 @@ img {
     padding: .75rem 1rem .25rem;
 }
 
-.contact__label {
-    font-size: var(--smaller-font-size);
-    color: var(--title-color);
-}
-
-.contact__input {
-    width: 100%;
-    background-color: var(--input-color);
-    color: var(--text-color);
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    border: none;
-    outline: none;
-    padding: .25rem .5rem .5rem 0;
-}
-
 /* ==== FOOTER ==== */
 .footer {
     padding-top: 2rem;
@@ -800,7 +784,7 @@ img {
      }
 
      .qualification__sections {
-         display: grid;
+         display: flex;
          grid-template-columns: .6fr;
          justify-content: center;
      }
