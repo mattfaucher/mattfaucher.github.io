@@ -152,9 +152,16 @@ if (selectedTheme) {
 
 // Add event listener for toggle button
 themeButton.addEventListener('click', () => {
+    var image = document.getElementById("siteImg");
     document.body.classList.toggle(darkTheme);
     themeButton.classList.toggle(iconTheme);
     // Save user preference
     localStorage.setItem('selected-theme', getCurrentTheme());
     localStorage.setItem('selected-icon', getCurrentIcon());
+    
+    if (getCurrentTheme() == 'dark') {
+        document.getElementById("siteImg").setAttribute("src", "../img/personal-site-light.PNG");
+    } else {
+        document.getElementById("siteImg").setAttribute("src", "../img/personal-site.PNG");
+    }
 });
