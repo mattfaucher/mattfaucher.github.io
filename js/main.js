@@ -68,6 +68,20 @@ tabs.forEach(tab => {
     });
 });
 
+/* ==== PROJECTS SWIPER ==== */
+let swiper = new Swiper(".project__container", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+
 /* ==== SCROLL SECTIONS ACTIVE LINK ==== */
 const sections = document.querySelectorAll('section[id]');
 
