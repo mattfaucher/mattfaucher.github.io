@@ -490,21 +490,25 @@ img {
     width: 50%;
 }
 
-/* ==== BACKEND SKILLS ==== */
-.skills__php {
-    width: 80%;
+/* ==== Technologies & Tools ==== */
+.skills__git {
+    width: 90%;
+}
+
+.skills__react {
+    width: 40%;
 }
 
 .skills__node {
-    width: 70%;
+    width: 50%;
 }
 
-.skills__firebase {
+.skills__vim {
     width: 90%;
 }
 
-.skills__python {
-    width: 90%;
+.skill__agile {
+    width: 75%;
 }
 
 .skills__close .skills__list {
