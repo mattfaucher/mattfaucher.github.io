@@ -482,6 +482,10 @@ img {
     width: 80%;
 }
 
+.skills__csharp {
+    width: 60%;
+}
+
 .skills__python {
     width: 70%;
 }
@@ -500,6 +504,14 @@ img {
 }
 
 .skills__node {
+    width: 50%;
+}
+
+.skills__rest {
+    width: 70%;
+}
+
+.skills__mongo {
     width: 50%;
 }
 
