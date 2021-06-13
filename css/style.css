@@ -537,51 +537,51 @@ img {
     transform: rotate(-180deg);
 }
 
-/* ==== QUALIFICATION ==== */
-.qualification__tabs {
+/* ==== EXPERIENCE ==== */
+.experience__tabs {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: var(--mb-2);
 }
 
-.qualification__button {
+.experience__button {
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     cursor: pointer;
 }
 
-.qualification__button:hover {
+.experience__button:hover {
     color: var(--first-color);
 }
 
-.qualification__icon {
+.experience__icon {
     font-size: 1.8rem;
     margin-right: var(--mb-0-25);
 }
 
-.qualification__data {
+.experience__data {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.5rem;
 }
 
-.qualification__title {
+.experience__title {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
 }
 
-.qualification__subtitle {
+.experience__subtitle {
     display: inline-block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1);
 }
 
-.qualification__calendar {
+.experience__calendar {
     font-size: var(--smaller-font-size);
     color: var(--text-color-light);
 }
 
-.qualification__rounder {
+.experience__rounder {
     display: inline-block;
     width: 13px;
     height: 13px;
@@ -589,7 +589,7 @@ img {
     border-radius: 50%;
 }
 
-.qualification__line {
+.experience__line {
    display: block;
    width: 1px;
    height: 100%;
@@ -597,15 +597,15 @@ img {
    transform: translate(6px, -7px);
 }
 
-.qualification [data-content] {
+.experience [data-content] {
     display: none;
 }
 
-.qualification__active[data-content] {
+.experience__active[data-content] {
     display: block;
 }
 
-.qualification__button.qualification__active {
+.experience__button.experience__active {
     color: var(--first-color);
 }
 
@@ -828,7 +828,7 @@ img {
          font-size: var(--normal-font-size);
      }
 
-     .qualification__data {
+     .experience__data {
          gap: .5rem;
      }
  }
@@ -856,7 +856,7 @@ img {
          grid-template-columns: repeat(1, 1fr);
      }
 
-     .qualification__sections {
+     .experience__sections {
          display: flex;
          grid-template-columns: .6fr;
          justify-content: center;
@@ -958,15 +958,15 @@ img {
          justify-content: initial;
      }
 
-     .qualification__tabs {
+     .experience__tabs {
          justify-content: center;
      }
 
-     .qualification__button {
+     .experience__button {
          margin: 0 var(--mb-1);
      }
 
-     .qualification__sections {
+     .experience__sections {
          grid-template-columns: .5fr;
      }
 
