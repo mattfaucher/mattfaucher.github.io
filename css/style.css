@@ -5,11 +5,11 @@
     --header-height: 3rem;
 
     /* ==== COLORS ==== */
-    --hue-color: 360;
+    --hue-color: 197;
 
     /* HSL Color Mode */
-    --first-color: hsl(var(--hue-color), 69%, 61%);
-    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color: hsl(var(--hue-color), 30%, 50%);
+    --first-color-second: hsl(var(--hue-color), 35%, 60%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
