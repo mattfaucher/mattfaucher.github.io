@@ -296,6 +296,10 @@ img {
     width: 170px;
 }
 
+.home__blob-img:hover {
+    width: 160px;
+}
+
 .home__data {
     grid-column: 1/3;
 }
