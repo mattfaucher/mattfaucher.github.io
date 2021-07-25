@@ -772,6 +772,17 @@ img {
      .skills__title {
          font-size: var(--normal-font-size);
      }
+     
+     .skills__grid {
+        border-left: 1px solid var(--text-color-light);
+        border-right: 1px solid var(--text-color-light);
+        border-radius: 3rem;
+        grid-template-columns: repeat(2, auto);
+     }
+     
+     .skills__titles {
+         font-size: var(--h3-font-size);
+     }
 
      .experience__data {
          gap: .5rem;
