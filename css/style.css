@@ -776,7 +776,8 @@ img {
      .skills__grid {
         border-left: 1px solid var(--text-color-light);
         border-right: 1px solid var(--text-color-light);
-        border-radius: 3rem;
+        border-radius: 1.5rem;
+        justify-content: left;
         grid-template-columns: repeat(2, auto);
      }
      
