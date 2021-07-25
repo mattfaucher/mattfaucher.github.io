@@ -777,7 +777,7 @@ img {
          font-size: var(--smaller-font-size);
      }
      
-     .skills__grid {
+     .skills__titles {
          justify-content: left;
      }
      
@@ -811,6 +811,10 @@ img {
 
      .skills__name {
          font-size: var(--normal-font-size);
+     }
+     
+     .skills__titles {
+         justify-content: left;
      }
      
      .experience__sections {
