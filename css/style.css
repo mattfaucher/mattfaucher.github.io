@@ -772,7 +772,15 @@ img {
      .skills__title {
          font-size: var(--normal-font-size);
      }
-
+     
+     .skills__name {
+         font-size: var(--smaller-font-size);
+     }
+     
+     .skills__grid {
+         justify-content: left;
+     }
+     
      .experience__data {
          gap: .5rem;
      }
@@ -801,18 +809,10 @@ img {
          grid-template-columns: repeat(1, 1fr);
      }
 
-     .skills__grid {
-        border-left: 1px solid var(--text-color-light);
-        border-right: 1px solid var(--text-color-light);
-        border-radius: 1.5rem;
-        justify-content: left;
-        grid-template-columns: repeat(2, auto);
+     .skills__name {
+         font-size: var(--normal-font-size);
      }
      
-     .skills__titles {
-         font-size: var(--h3-font-size);
-     }
-
      .experience__sections {
          display: flex;
          grid-template-columns: .6fr;
@@ -914,7 +914,7 @@ img {
      .about__buttons {
          justify-content: initial;
      }
-
+     
      .experience__tabs {
          justify-content: center;
      }
