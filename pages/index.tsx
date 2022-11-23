@@ -1,12 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from '../styles/Home.module.css';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
-import headshot from '../img/MLAX_Headshot-removebg.png';
 import Experience from '../components/Experience';
 import Card from '../components/Card';
-import minishell from '../img/project_img/mini-shell.png';
 import { useState } from 'react';
 
 export default function Home() {
@@ -69,7 +66,7 @@ export default function Home() {
             </a>
           </div>
           <div className='relative mx-auto bg-gradient-to-t from-white to-blue-500 rounded-full w-80 h-80 m-5 overflow-hidden p-4'>
-            <Image src={headshot} alt='headshot image' style={{ position: 'relative', top: '-15px' }} />
+            <Image src='https://github.com/mattfaucher/mattfaucher.github.io/blob/master/img/MLAX_Headshot-removebg.png' alt='headshot image' style={{ position: 'relative', top: '-15px' }} />
           </div>
         </section>
 
