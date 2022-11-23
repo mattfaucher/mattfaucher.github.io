@@ -1,7 +1,8 @@
 # Matt Faucher Personal Website
 
----
+|Built with|
+|:--:|
+|[<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/2560px-Nextjs-logo.svg.png" alt="nextjs" width=200px>](https://nextjs.org/)|
+|[<img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-ar21.png" alt="tailwind" width=200px>](https://tailwindcss.com/)|
 
-Personal website that serves as a portfolio and resume all while being easily accessible.
 
-HTML, CSS, and vanilla JavaScript are all that were used to create this website along with Unicons for icons and Swiper.js to handle the slide animation.
