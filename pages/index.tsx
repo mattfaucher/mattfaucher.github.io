@@ -66,7 +66,7 @@ export default function Home() {
             </a>
           </div>
           <div className='relative mx-auto bg-gradient-to-t from-white to-blue-500 rounded-full w-80 h-80 m-5 overflow-hidden p-4'>
-            <Image src='https://github.com/mattfaucher/mattfaucher.github.io/blob/master/img/MLAX_Headshot-removebg.png' alt='headshot image' style={{ position: 'relative', top: '-15px' }} />
+            <Image src='https://raw.githubusercontent.com/mattfaucher/mattfaucher.github.io/master/img/MLAX_Headshot-removebg.png' alt='headshot image' style={{ position: 'relative', top: '-15px' }} />
           </div>
         </section>
 
