@@ -18,8 +18,8 @@ export default function Home() {
 
       <main className='bg-white sm:px-5 md:px-20 pb-10 dark:bg-gray-800 dark:text-white'>
         <nav className='py-10 mb-12 flex justify-between'>
-          <h1 className='text-xl'>Matt Faucher</h1>
-          <ul className='flex items-center space-x-3'>
+          <h1 className='text-xl ml-5'>Matt Faucher</h1>
+          <ul className='flex items-center space-x-3 mr-5'>
             <li>
               <BsFillMoonStarsFill className='cursor-pointer text-xl' onClick={() => setDarkMode(!darkMode)} />
             </li>
@@ -67,7 +67,7 @@ export default function Home() {
             </a>
           </div>
           <div className='relative mx-auto bg-gradient-to-t from-white to-blue-500 rounded-full w-80 h-80 m-5 overflow-hidden p-4'>
-            <Image src='https://raw.githubusercontent.com/mattfaucher/mattfaucher.github.io/master/img/MLAX_Headshot-removebg.png' alt='headshot image' style={{ position: 'relative', top: '-15px' }} />
+            <Image src='https://raw.githubusercontent.com/mattfaucher/mattfaucher.github.io/master/img/MLAX_Headshot-removebg.png' alt='headshot image' style={{ position: 'relative', top: '-15px' }} width={320} height={320} />
           </div>
         </section>
 
