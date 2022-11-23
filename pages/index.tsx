@@ -37,9 +37,10 @@ export default function Home() {
             <h2 className='text-5xl py-2 text-blue-500 font-medium'>Matt Faucher</h2>
             <h3 className='text-2xl py-2'>Software Engineer</h3>
             <p className='text-lg py-5 px-10 leading-6 text-gray-800 dark:text-white'>
-              My name is Matthew Faucher. I am currently pursuing a master’s degree in Computer Science at <span className='text-red-500'>Northeastern University</span>.
-              Software Engineering, Software Development and everything in between fall within my interests and desired career path.
+              My name is Matt Faucher. I am currently pursuing a master&apos;s degree in Computer Science at <span className='text-red-500'>Northeastern University</span>.
               Through schooling and full-time co-op/intern positions, I have gained experience with back-end languages as well as full-stack web development.
+              My interests currently lie in front-end and web development. However, I understand and appreciate back-end and the theory that can come along with it.
+              My passions are product development, computer science theory, and most things in between.
             </p>
           </div>
           <div className='text-5xl flex justify-center gap-16 text-gray-600 p-8 dark:text-white'>
