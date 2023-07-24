@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
 
       <main className='bg-white sm:px-5 md:px-20 pb-10 dark:bg-gray-800 dark:text-white'>
-        <nav className='py-10 mb-12 flex justify-between'>
+        <nav className='py-10 mb-12 mx-4 flex justify-between'>
           <a
             className='bg-blue-500 text-gray-300 px-4 py-2 rounded-md dark:text-white'
             href='https://github.com/mattfaucher/mattfaucher.github.io/tree/master/public/Resume.pdf' download='matt_faucher_resume.pdf' target='_blank' rel='noreferrer'>
