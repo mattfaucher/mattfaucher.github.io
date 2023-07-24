@@ -8,6 +8,7 @@ export default function Experience() {
   const black = '#000';
   const cardBgColor = '#6495ED';
   const awsColor = '#ff9900';
+  const efsColor = '#60933D'
   const googleGreen = '#34a853';
   const neuRed = '#e50000';
   const teradyneBlue = '#04d9ff';
@@ -22,12 +23,27 @@ export default function Experience() {
         className='vertical-timeline-element--work'
         contentStyle={{ background: cardBgColor, color: black }}
         contentArrowStyle={{ borderRight: `7px solid ${cardBgColor}` }}
-        date='September 2022 - Present'
+        date='June 2023 - Present'
+        dateClassName={dateDark}
+        iconStyle={{ background: efsColor, color: black }}
+        icon={<a href='https://aws.amazon.com/efs' target='_blank' rel='noreferrer'><FaAws /></a>}
+      >
+        <h2>Amazon Web Services</h2>
+        <h3 className='vertical-timeline-element-title'>Software Development Engineer</h3>
+        <h4 className='vertical-timeline-element-subtitle'>Boston, MA</h4>
+        <p className='text-gray-200'>CloudFormation, Mircoservices, Lambda, Python, CDK, CI/CD, Cloud Development</p>
+      </VerticalTimelineElement>
+
+      <VerticalTimelineElement
+        className='vertical-timeline-element--work'
+        contentStyle={{ background: cardBgColor, color: black }}
+        contentArrowStyle={{ borderRight: `7px solid ${cardBgColor}` }}
+        date='September 2022 - December 2022'
         dateClassName={dateDark}
         iconStyle={{ background: awsColor, color: black }}
         icon={<a href='https://aws.amazon.com/efs' target='_blank' rel='noreferrer'><FaAws /></a>}
       >
-        <h2>AWS Elastic File System</h2>
+        <h2>Amazon Web Services</h2>
         <h3 className='vertical-timeline-element-title'>Software Development Engineer Intern</h3>
         <h4 className='vertical-timeline-element-subtitle'>Boston, MA</h4>
         <p className='text-gray-200'>Lambda, Python, CDK, CI/CD, Cloud Development</p>
