@@ -3,12 +3,14 @@ import Image from 'next/image';
 import { BsFillMoonStarsFill, BsSun } from 'react-icons/bs';
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import Experience from '../components/Experience';
-import Card from '../components/Card';
+import ExperienceTimeline from '../components/ExperienceTimeline';
+import Projects from '../components/Projects';
 import { useState } from 'react';
 import FancyListItem from '../components/FancyListItem';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+
   return (
     <div className={darkMode ? 'dark' : ''}>
       <Head>
@@ -18,23 +20,21 @@ export default function Home() {
       </Head>
 
       <main className='bg-white sm:px-5 md:px-20 pb-10 dark:bg-gray-800 dark:text-white'>
-        <nav className='py-10 mb-12 mx-4 flex justify-between'>
+        <nav className='max-w-screen-xl flex flex-wrap items-center justify-between lg:mx-10 sm:mx-5 p-4'>
           <a
-            className='bg-blue-500 text-gray-300 px-4 py-2 rounded-md dark:text-white'
+            className='flex items-center bg-blue-500 text-gray-300 px-4 py-2 rounded-md dark:text-white'
             href='https://github.com/mattfaucher/mattfaucher.github.io/tree/master/public/Resume.pdf' download='matt_faucher_resume.pdf' target='_blank' rel='noreferrer'>
             Resume
           </a>
-          <div className='flex items-center space-between mr-5'>
-            <button className='bg-blue-500 text-gray-300 p-2 rounded-md dark:text-white'>
-              {darkMode ?
-                <BsFillMoonStarsFill className='cursor-pointer text-xl' onClick={() => setDarkMode(!darkMode)} />
-                :
-                <BsSun
-                  className='cursor-pointer text-xl' onClick={() =>
-                    setDarkMode(!darkMode)} />
-              }
-            </button>
-          </div>
+          <button className='inline-flex items-center justify-center bg-blue-500 text-gray-300 p-2 rounded-md dark:text-white'>
+            {darkMode ?
+              <BsFillMoonStarsFill className='cursor-pointer text-xl' onClick={() => setDarkMode(!darkMode)} />
+              :
+              <BsSun
+                className='cursor-pointer text-xl' onClick={() =>
+                  setDarkMode(!darkMode)} />
+            }
+          </button>
         </nav>
         <section>
           <div className='text-center p-5'>
@@ -89,33 +89,15 @@ export default function Home() {
             <h3 className='text-4xl mb-5 text-center p-8'>
               Work Experience
             </h3>
-            <Experience />
+            <ExperienceTimeline />
           </div>
         </section>
 
         <section>
-          <div>
-            <h3 className='text-4xl mb-5 text-center'>
-              Projects
-            </h3>
-            <div className='grid md:grid-cols-3 sm:grid-cols-1 m-auto p-8 justify-center'>
-              <Card
-                title='nuHabit: Habit tracking made simple'
-                content='Full stack web application written in JavaScript that is used for tracking habits. This app was created for a class project and includes a front-end, back-end, as well as a database via MongoDB.'
-                url='https://github.com/mattfaucher/nuHabit/'
-              />
-              <Card
-                title='Mini Shell'
-                content='A shell written in C that can handle all standard linux commands as well as other custom created commands.'
-                url='https://github.com/mattfaucher/mini-shell'
-              />
-              <Card
-                title='Apex Rank Bot'
-                content='Bot written for Discord Server. This bot was used to handle commands that users input and based on those commands automate administrative tasks within the server. Used Python.'
-                url='https://github.com/mattfaucher/apex-rank-bot'
-              />
-            </div>
-          </div>
+          <h3 className='text-4xl mb-5 text-center'>
+            Projects
+          </h3>
+          <Projects />
         </section>
       </main>
     </div>
