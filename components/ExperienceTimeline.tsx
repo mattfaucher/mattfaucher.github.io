@@ -1,8 +1,7 @@
 import { Chrono } from "react-chrono";
-import { MutableRefObject } from "react";
 
 function formatDate(date: string | null) {
-  const options = {
+  const options: any = {
     year: "numeric",
     month: "long",
   };
