@@ -2,10 +2,9 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { BsFillMoonStarsFill, BsSun } from 'react-icons/bs';
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
-import Experience from '../components/Experience';
 import ExperienceTimeline from '../components/ExperienceTimeline';
 import Projects from '../components/Projects';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import FancyListItem from '../components/FancyListItem';
 
 export default function Home() {
@@ -89,7 +88,7 @@ export default function Home() {
             <h3 className='text-4xl mb-5 text-center p-8'>
               Work Experience
             </h3>
-            <ExperienceTimeline />
+            <ExperienceTimeline darkMode={darkMode} />
           </div>
         </section>
 

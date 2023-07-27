@@ -1,4 +1,5 @@
 import { Chrono } from "react-chrono";
+import { MutableRefObject } from "react";
 
 function formatDate(date: string | null) {
   const options = {
@@ -9,32 +10,40 @@ function formatDate(date: string | null) {
   return new Date(date).toLocaleDateString('en-US', options);
 }
 
-export default function ExperienceTimeline() {
+export default function ExperienceTimeline(props: { darkMode: boolean }) {
   const black = '#000';
-  const cardBgColor = '#6495ED';
-  const dateDark = 'dark:text-white'
+  let cardBgColor = '#ffffff';
+  const darkBlue = '#005c9d';
+  const primeBlue = '#0980d3';
+  const white = '#ffffff';
+  const lightGray = '#97a1aa';
+  const darkGray = '#5e6870';
 
   return (
     <Chrono
       mode="VERTICAL_ALTERNATING"
-      slideShow
-      slideshowItemDuration={500}
-      slideShowType="reveal"
-      autoScroll
+      disableNavOnKey
+      hideControls
+      scrollable
+      lineWidth={1}
+      fontSizes={{
+        cardTitle: '1.5rem',
+        cardSubtitle: '1.25rem',
+      }}
       theme={{
-        primary: "gray",
-        secondary: "white",
-        cardTitleColor: "black",
-        cardSubtitleColor: "black",
+        primary: primeBlue,
+        secondary: white,
+        cardTitleColor: darkBlue,
+        cardSubtitleColor: black,
         cardBgColor: cardBgColor,
-        cardMediaBgColor: "white",
+        cardMediaBgColor: darkBlue,
         titleColor: black,
       }}
       items={
         [
           {
-            title: `${formatDate("2023-06-02")} to ${formatDate(null)}`,
-            cardTitle: "Amazon Web Services - Boston, MA",
+            title: `${formatDate("2023-06-02")} to Present`,
+            cardTitle: "Amazon Web Services | Boston, MA",
             url: "https://aws.amazon.com/",
             cardSubtitle: "Software Engineer",
             cardDetailedText:
@@ -51,7 +60,7 @@ export default function ExperienceTimeline() {
           },
           {
             title: `${formatDate("2022-09-12")} to ${formatDate("2022-12-16")}`,
-            cardTitle: "Amazon Web Services - Boston, MA",
+            cardTitle: "Amazon Web Services | Boston, MA",
             url: "https://aws.amazon.com/",
             cardSubtitle: "Software Engineer Intern",
             cardDetailedText:
@@ -71,7 +80,7 @@ export default function ExperienceTimeline() {
           },
           {
             title: `${formatDate("2022-06-02")} to ${formatDate("2022-09-02")}`,
-            cardTitle: "Google Display & Video 360 - Kirkland, WA (Remote)",
+            cardTitle: "Google Display & Video 360 | Kirkland, WA (Remote)",
             url: "https://marketingplatform.google.com/about/display-video-360/",
             cardSubtitle: "Software Engineer Intern",
             cardDetailedText:
@@ -91,7 +100,7 @@ export default function ExperienceTimeline() {
           },
           {
             title: `${formatDate("2022-01-02")} to ${formatDate("2022-05-02")}`,
-            cardTitle: "Khoury College of Computer Sciences at Northeastern University",
+            cardTitle: "Khoury College of Computer Sciences at Northeastern University | Boston, MA",
             url: "https://www.khoury.northeastern.edu/",
             cardSubtitle: "Graduate Teaching Assistant",
             cardDetailedText:
