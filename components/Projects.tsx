@@ -2,7 +2,7 @@ import Card from '../components/Card';
 
 export default function Projects() {
   return (
-    <div className='grid md:grid-cols-3 sm:grid-cols-1 m-auto p-8 justify-center'>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
       <Card
         title='Neovim Configuration'
         content='Handmade customized Neovim configuration. Personalized to include the keymaps and tools that help me be productive!'
